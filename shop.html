@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5" name="viewport" />
+    <meta name="theme-color" content="#064c39" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>WayanX Shop — Organic Premium Store</title>
+    <meta name="description"
+        content="Browse our curated collection of organic spices, cold-pressed oils, grains, and more — all sourced directly from Wayanad's finest farms." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="page-wrapper" style="display:flex;flex-direction:column;min-height:100dvh;">
+
+        <!-- Header -->
+        <header class="site-header">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="header-btn" aria-label="Back">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </a>
+                <a href="index.html"><img src="logo.jpg" alt="WayanX" style="height:32px;width:auto;" /></a>
+            </div>
+            <div class="flex items-center gap-1">
+                <button class="header-btn" aria-label="Search">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+                <a href="#" class="header-btn cart-badge" aria-label="Cart">
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                    <span class="badge-count">0</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- Filters -->
+        <div class="filter-bar no-scrollbar">
+            <button class="filter-pill">
+                <span>Category</span>
+                <span class="material-symbols-outlined" style="font-size:18px;">keyboard_arrow_down</span>
+            </button>
+            <button class="filter-pill">
+                <span>Price Range</span>
+                <span class="material-symbols-outlined" style="font-size:18px;">keyboard_arrow_down</span>
+            </button>
+            <button class="filter-pill">
+                <span>Weight</span>
+                <span class="material-symbols-outlined" style="font-size:18px;">keyboard_arrow_down</span>
+            </button>
+            <button class="filter-pill muted">
+                <span>Reset</span>
+            </button>
+        </div>
+
+        <!-- Product Grid -->
+        <main class="main-content" style="padding:0.5rem 1rem 6rem;">
+            <div class="product-grid">
+
+                <!-- Product 1 -->
+                <div class="product-card reveal delay-1">
+                    <a href="product.html" class="product-card-img">
+                        <img src="Asset/product (12).jpeg" alt="WayanX Organic Coconut Oil" />
+                        <button class="product-card-wishlist active" aria-label="Wishlist"><span
+                                class="material-symbols-outlined">favorite</span></button>
+                    </a>
+                    <div class="product-card-body">
+                        <a href="product.html">
+                            <h3 class="product-card-name">WayanX Coconut Oil</h3>
+                        </a>
+                        <p class="product-card-desc">500g Net Weight</p>
+                        <div class="product-card-footer">
+                            <span class="product-price product-price-green">$12.50</span>
+                            <button class="add-to-cart-btn" data-add-cart="Organic Royal Quinoa" data-price="12.50"
+                                aria-label="Add to cart"><span
+                                    class="material-symbols-outlined">add_shopping_cart</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card reveal delay-2">
+                    <a href="product.html" class="product-card-img">
+                        <img src="Asset/product (5).jpeg" alt="WayanX Coconut Oil Green" />
+                        <button class="product-card-wishlist" aria-label="Wishlist"><span
+                                class="material-symbols-outlined">favorite</span></button>
+                    </a>
+                    <div class="product-card-body">
+                        <a href="product.html">
+                            <h3 class="product-card-name">WayanX Coconut Oil (Green)</h3>
+                        </a>
+                        <p class="product-card-desc">350ml Glass Jar</p>
+                        <div class="product-card-footer">
+                            <span class="product-price product-price-green">$18.20</span>
+                            <button class="add-to-cart-btn" data-add-cart="Raw Wildflower Honey" data-price="18.20"
+                                aria-label="Add to cart"><span
+                                    class="material-symbols-outlined">add_shopping_cart</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card reveal delay-3">
+                    <a href="product.html" class="product-card-img">
+                        <img src="Asset/product (6).jpeg" alt="WayanX Sunflower Oil" />
+                        <button class="product-card-wishlist" aria-label="Wishlist"><span
+                                class="material-symbols-outlined">favorite</span></button>
+                    </a>
+                    <div class="product-card-body">
+                        <a href="product.html">
+                            <h3 class="product-card-name">WayanX Sunflower Oil</h3>
+                        </a>
+                        <p class="product-card-desc">1kg Family Pack</p>
+                        <div class="product-card-footer">
+                            <span class="product-price product-price-green">$9.45</span>
+                            <button class="add-to-cart-btn" data-add-cart="Brown Rice" data-price="9.45"
+                                aria-label="Add to cart"><span
+                                    class="material-symbols-outlined">add_shopping_cart</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card reveal delay-4">
+                    <a href="product.html" class="product-card-img">
+                        <img src="Asset/product (9).jpeg" alt="Kera Priyam Coconut Oil" />
+                        <button class="product-card-wishlist active" aria-label="Wishlist"><span
+                                class="material-symbols-outlined">favorite</span></button>
+                    </a>
+                    <div class="product-card-body">
+                        <a href="product.html">
+                            <h3 class="product-card-name">Kera Priyam Coconut Oil</h3>
+                        </a>
+                        <p class="product-card-desc">250g Fine Grain</p>
+                        <div class="product-card-footer">
+                            <span class="product-price product-price-green">$7.80</span>
+                            <button class="add-to-cart-btn" data-add-cart="Himalayan Salt" data-price="7.80"
+                                aria-label="Add to cart"><span
+                                    class="material-symbols-outlined">add_shopping_cart</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card reveal delay-1">
+                    <a href="product.html" class="product-card-img">
+                        <img src="Asset/product (4).jpeg" alt="WayanX Coconut Oil & Sunflower Oil" />
+                        <button class="product-card-wishlist" aria-label="Wishlist"><span
+                                class="material-symbols-outlined">favorite</span></button>
+                    </a>
+                    <div class="product-card-body">
+                        <a href="product.html">
+                            <h3 class="product-card-name">WayanX Combo Pack</h3>
+                        </a>
+                        <p class="product-card-desc">750g Eco Bag</p>
+                        <div class="product-card-footer">
+                            <span class="product-price product-price-green">$11.20</span>
+                            <button class="add-to-cart-btn" data-add-cart="Organic Oats" data-price="11.20"
+                                aria-label="Add to cart"><span
+                                    class="material-symbols-outlined">add_shopping_cart</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card reveal delay-2">
+                    <a href="product.html" class="product-card-img">
+                        <img src="Asset/product (7).jpeg" alt="WayanX Premium Oils" />
+                        <button class="product-card-wishlist" aria-label="Wishlist"><span
+                                class="material-symbols-outlined">favorite</span></button>
+                    </a>
+                    <div class="product-card-body">
+                        <a href="product.html">
+                            <h3 class="product-card-name">WayanX Premium Oil</h3>
+                        </a>
+                        <p class="product-card-desc">500ml Cold Pressed</p>
+                        <div class="product-card-footer">
+                            <span class="product-price product-price-green">$24.00</span>
+                            <button class="add-to-cart-btn" data-add-cart="Olive Oil" data-price="24.00"
+                                aria-label="Add to cart"><span
+                                    class="material-symbols-outlined">add_shopping_cart</span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Floating Cart Summary -->
+        <div class="floating-cart">
+            <div class="floating-cart-inner">
+                <div class="floating-cart-left">
+                    <span class="material-symbols-outlined">shopping_basket</span>
+                    <span class="fc-count">0 Items in Cart</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="floating-cart-label">Total:</span>
+                    <span class="floating-cart-total fc-total">$0.00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Nav -->
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item">
+                <span class="material-symbols-outlined">home</span>
+                <p>Home</p>
+            </a>
+            <a href="shop.html" class="nav-item active">
+                <span class="material-symbols-outlined">storefront</span>
+                <p>Shop</p>
+            </a>
+            <a href="wayanad.html" class="nav-item">
+                <span class="material-symbols-outlined">info</span>
+                <p>Wayanad</p>
+            </a>
+            <a href="contact.html" class="nav-item">
+                <span class="material-symbols-outlined">account_circle</span>
+                <p>Contact</p>
+            </a>
+        </nav>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

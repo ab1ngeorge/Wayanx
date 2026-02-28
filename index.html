@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5" name="viewport" />
+  <meta name="theme-color" content="#064c39" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>WayanX — Pure Natural Products from Wayanad</title>
+  <meta name="description"
+    content="Experience authentic organic spices, cold-pressed oils, and natural products harvested directly from the high-altitude farms of Wayanad, Kerala." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="page-wrapper" style="display:flex;flex-direction:column;min-height:100dvh;">
+
+    <!-- Header -->
+    <header class="site-header">
+      <button class="header-btn" aria-label="Menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <a href="index.html" class="header-logo"><img src="logo.jpg" alt="WayanX" style="height:40px;width:auto;" /></a>
+      <a href="shop.html" class="header-btn cart-badge" aria-label="Cart">
+        <span class="material-symbols-outlined">shopping_bag</span>
+        <span class="badge-count">0</span>
+      </a>
+    </header>
+
+    <main class="main-content">
+
+      <!-- Hero -->
+      <section class="hero"
+        style='background-image: linear-gradient(to top, rgba(6,76,57,0.9) 0%, rgba(6,76,57,0.2) 50%, transparent 100%), url("Asset/product (1).jpeg");'>
+        <div class="hero-content">
+          <h2>Pure Natural Products from Wayanad</h2>
+          <p>Experience the authentic taste of nature, harvested directly from high-altitude farms.</p>
+          <div class="hero-actions">
+            <a href="shop.html" class="btn btn-accent btn-lg flex-1">Shop Oils</a>
+            <a href="shop.html" class="btn btn-outline btn-lg flex-1">Shop Spices</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products -->
+      <section class="section" id="featured">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="section-title">Featured Products</h2>
+          <a href="shop.html" style="color:var(--primary);font-weight:600;font-size:0.875rem;">View All</a>
+        </div>
+
+        <div class="product-grid">
+          <!-- Card 1 -->
+          <div class="product-card reveal delay-1">
+            <div class="product-card-img">
+              <img src="Asset/product (12).jpeg" alt="WayanX Organic Coconut Oil" />
+              <button class="product-card-wishlist" aria-label="Add to wishlist"><span
+                  class="material-symbols-outlined">favorite</span></button>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">WayanX Coconut Oil</h3>
+              <div class="product-card-footer">
+                <span class="product-price">₹450</span>
+                <button class="add-to-cart-btn" data-add-cart="Organic Coconut Oil" data-price="5.40"
+                  aria-label="Add to cart"><span class="material-symbols-outlined">add_shopping_cart</span></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="product-card reveal delay-2">
+            <div class="product-card-img">
+              <img src="Asset/product (5).jpeg" alt="WayanX Coconut Oil Green Bottle" />
+              <button class="product-card-wishlist" aria-label="Add to wishlist"><span
+                  class="material-symbols-outlined">favorite</span></button>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">WayanX Coconut Oil (Green)</h3>
+              <div class="product-card-footer">
+                <span class="product-price">₹280</span>
+                <button class="add-to-cart-btn" data-add-cart="Tellicherry Pepper" data-price="3.36"
+                  aria-label="Add to cart"><span class="material-symbols-outlined">add_shopping_cart</span></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="product-card reveal delay-3">
+            <div class="product-card-img">
+              <img src="Asset/product (9).jpeg" alt="Kera Priyam Coconut Oil" />
+              <button class="product-card-wishlist" aria-label="Add to wishlist"><span
+                  class="material-symbols-outlined">favorite</span></button>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Kera Priyam Coconut Oil</h3>
+              <div class="product-card-footer">
+                <span class="product-price">₹590</span>
+                <button class="add-to-cart-btn" data-add-cart="Green Cardamom" data-price="7.08"
+                  aria-label="Add to cart"><span class="material-symbols-outlined">add_shopping_cart</span></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="product-card reveal delay-4">
+            <div class="product-card-img">
+              <img src="Asset/product (6).jpeg" alt="WayanX Sunflower Oil" />
+              <button class="product-card-wishlist" aria-label="Add to wishlist"><span
+                  class="material-symbols-outlined">favorite</span></button>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">WayanX Sunflower Oil</h3>
+              <div class="product-card-footer">
+                <span class="product-price">₹320</span>
+                <button class="add-to-cart-btn" data-add-cart="Sunflower Oil" data-price="3.84"
+                  aria-label="Add to cart"><span class="material-symbols-outlined">add_shopping_cart</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose WayanX -->
+      <section class="section-lg section-bg reveal">
+        <h2 class="text-xl font-extrabold text-center mb-8">Why Choose WayanX</h2>
+        <div class="usp-grid">
+          <div class="usp-item">
+            <div class="usp-icon"><span class="material-symbols-outlined">eco</span></div>
+            <h4 class="usp-title">100% Natural</h4>
+            <p class="usp-desc">No preservatives added</p>
+          </div>
+          <div class="usp-item">
+            <div class="usp-icon"><span class="material-symbols-outlined">handshake</span></div>
+            <h4 class="usp-title">Direct From Farm</h4>
+            <p class="usp-desc">Supporting local farmers</p>
+          </div>
+          <div class="usp-item">
+            <div class="usp-icon"><span class="material-symbols-outlined">opacity</span></div>
+            <h4 class="usp-title">Cold Pressed</h4>
+            <p class="usp-desc">Retains all nutrients</p>
+          </div>
+          <div class="usp-item">
+            <div class="usp-icon"><span class="material-symbols-outlined">public</span></div>
+            <h4 class="usp-title">World Delivery</h4>
+            <p class="usp-desc">Wayanad to the world</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Explore Categories -->
+      <section class="section">
+        <h2 class="text-xl font-extrabold mb-6">Explore Categories</h2>
+        <div class="space-y-4">
+          <a href="shop.html" class="category-card reveal">
+            <img src="Asset/product (3).jpeg" alt="Natural Oils" />
+            <div class="category-card-overlay green">
+              <h3>Natural Oils</h3>
+            </div>
+          </a>
+          <a href="shop.html" class="category-card reveal">
+            <img src="Asset/product (11).jpeg" alt="Pure Oils" />
+            <div class="category-card-overlay amber">
+              <h3>Pure Spices</h3>
+            </div>
+          </a>
+          <a href="shop.html" class="category-card reveal">
+            <img src="Asset/product (10).jpeg" alt="Pouch Products" />
+            <div class="category-card-overlay brown">
+              <h3>Curry Powders</h3>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- The Wayanad Story -->
+      <section class="story-section reveal">
+        <div class="story-bg">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnqUc_7yT_qZtQkZqWr1dFMDdG5_DukHjd8ifL63JTvDavEcag49mlz0ADzmUECPUnGm1ZzwKK--mnAyvx1lInkEd_KEnqg35CYr87QxTksSOaP_rrlN98r0ksbiOAK0HBzTlYU_J7Uo_wnEMmao0rAMxK0chJEQvjhUPX8YTSFGK2CgpiEUc80CLSpKMSjnxviLKflMtgCenoJtmPL_GF0-GciiwPn4LIaNkhgcUNlT07wnxIgNNsg9G9tBG1XSZD7Ord9ke1-ygG"
+            alt="Misty hills of Wayanad" />
+        </div>
+        <div class="story-content">
+          <h2 style="font-size:1.5rem;font-weight:800;color:var(--primary);margin-bottom:1rem;">The Wayanad Story</h2>
+          <p class="text-muted leading-relaxed" style="max-width:480px;margin:0 auto 1.5rem;">
+            Nestled in the Western Ghats, Wayanad's fertile soil and misty weather create the perfect environment for
+            world-class spices and oils. WayanX brings this legacy of purity directly to your kitchen.
+          </p>
+          <a href="wayanad.html" class="btn btn-ghost">Read Our Journey</a>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="newsletter reveal">
+        <h2>Stay Fresh & Informed</h2>
+        <p>Get recipes and seasonal harvest updates</p>
+        <form class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email address" required />
+          <button type="submit" class="btn btn-accent btn-full">Subscribe</button>
+        </form>
+        <div class="newsletter-success">🌿 Thanks! You're on the list.</div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Nav -->
+    <nav class="bottom-nav">
+      <a href="index.html" class="nav-item active">
+        <span class="material-symbols-outlined">home</span>
+        <p>Home</p>
+      </a>
+      <a href="shop.html" class="nav-item">
+        <span class="material-symbols-outlined">storefront</span>
+        <p>Shop</p>
+      </a>
+      <a href="wayanad.html" class="nav-item">
+        <span class="material-symbols-outlined">info</span>
+        <p>Wayanad</p>
+      </a>
+      <a href="contact.html" class="nav-item">
+        <span class="material-symbols-outlined">account_circle</span>
+        <p>Contact</p>
+      </a>
+    </nav>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
