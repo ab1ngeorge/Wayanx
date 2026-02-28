@@ -485,6 +485,71 @@
     });
   }
 
+  // ---- Testimonials Carousel ----
+  function initTestimonials() {
+    const carousel = document.getElementById('testimonials-carousel');
+    const dotsContainer = document.getElementById('testimonial-dots');
+    if (!carousel || !dotsContainer) return;
+
+    const cards = carousel.querySelectorAll('.testimonial-card');
+    const dots = dotsContainer.querySelectorAll('.testimonial-dot');
+    if (cards.length === 0) return;
+
+    let current = 0;
+    let autoPlayTimer;
+
+    function showSlide(index) {
+      cards.forEach((card, i) => {
+        card.classList.toggle('active', i === index);
+      });
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+      current = index;
+    }
+
+    function nextSlide() {
+      showSlide((current + 1) % cards.length);
+    }
+
+    function startAutoPlay() {
+      autoPlayTimer = setInterval(nextSlide, 4500);
+    }
+
+    function resetAutoPlay() {
+      clearInterval(autoPlayTimer);
+      startAutoPlay();
+    }
+
+    // Dot clicks
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        showSlide(parseInt(dot.dataset.index));
+        resetAutoPlay();
+      });
+    });
+
+    // Touch swipe
+    let touchStartX = 0;
+    carousel.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+
+    carousel.addEventListener('touchend', (e) => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+          showSlide((current + 1) % cards.length);
+        } else {
+          showSlide((current - 1 + cards.length) % cards.length);
+        }
+        resetAutoPlay();
+      }
+    }, { passive: true });
+
+    startAutoPlay();
+  }
+
   // ---- Init ----
   function init() {
     cart.load();
@@ -506,6 +571,7 @@
     initBackToTop();
     initHeroParallax();
     initCardTilt();
+    initTestimonials();
   }
 
   if (document.readyState === 'loading') {
