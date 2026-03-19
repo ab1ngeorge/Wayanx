@@ -3457,6 +3457,34 @@ body {
   pointer-events: none;
 }
 
+/* ---------- Video Grid (Two Videos) ---------- */
+.video-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 0.75rem;
+}
+
+.video-grid .video-wrapper {
+  padding: 0;
+}
+
+.video-grid .video-wrapper::after {
+  inset: 0;
+}
+
+@media (min-width: 768px) {
+  .video-grid {
+    flex-direction: row;
+    gap: 1.25rem;
+    padding: 0 1rem;
+  }
+
+  .video-grid .video-wrapper {
+    flex: 1;
+  }
+}
+
 /* ---------- USP Glassmorphism Cards ---------- */
 .usp-card-glass {
   background: rgba(255, 255, 255, 0.7);
@@ -3764,5 +3792,281 @@ body {
 @media (max-width: 767px) {
   .header-logo img {
     height: 36px !important;
+  }
+}
+
+/* ========================================
+   PREMIUM VISUAL POLISH — ROUND 2
+   ======================================== */
+
+/* ---------- View All Link ---------- */
+.view-all-link {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: gap var(--transition), opacity var(--transition);
+}
+
+.view-all-link:hover {
+  gap: 0.5rem;
+  opacity: 0.8;
+}
+
+/* ---------- Stats Counter Strip ---------- */
+.stats-strip {
+  padding: 0 1rem;
+}
+
+.stats-strip-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: linear-gradient(135deg, var(--primary), #0a6b51);
+  border-radius: var(--radius-2xl);
+  padding: 1.5rem 0.5rem;
+  box-shadow: 0 12px 40px rgba(var(--primary-rgb), 0.2);
+  text-align: center;
+  gap: 0.25rem;
+}
+
+.stats-strip-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  position: relative;
+}
+
+.stats-strip-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background: rgba(255,255,255,0.2);
+}
+
+.stats-strip-value {
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.2;
+}
+
+.stats-strip-label {
+  font-size: 0.6rem;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+@media (max-width: 374px) {
+  .stats-strip-value {
+    font-size: 1.125rem;
+  }
+  .stats-strip-label {
+    font-size: 0.55rem;
+  }
+}
+
+/* ---------- Story Section Enhanced ---------- */
+.story-section-enhanced {
+  background: linear-gradient(180deg, var(--bg-light) 0%, rgba(var(--primary-rgb), 0.06) 100%);
+}
+
+.story-section-enhanced .story-bg img {
+  opacity: 0.1;
+  filter: grayscale(0.5) brightness(1.1);
+}
+
+.story-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--primary), #10b981);
+  border-radius: var(--radius-full);
+  color: var(--white);
+  margin: 0 auto 1rem;
+  box-shadow: 0 8px 24px rgba(var(--primary-rgb), 0.25);
+  animation: floatIcon 4s ease-in-out infinite;
+}
+
+.story-icon .material-symbols-outlined {
+  font-size: 28px;
+}
+
+@keyframes floatIcon {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* ---------- Trust Badges Enhanced ---------- */
+.trust-badges-enhanced {
+  gap: 0.75rem;
+}
+
+.trust-badge-animated {
+  padding: 1.25rem 0.75rem;
+  background: var(--white);
+  border: 1px solid rgba(var(--primary-rgb), 0.08);
+  border-radius: var(--radius-2xl);
+  box-shadow: 0 4px 20px rgba(var(--primary-rgb), 0.05);
+  transition: transform var(--transition-bounce), box-shadow var(--transition), border-color var(--transition);
+}
+
+.trust-badge-animated:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(var(--primary-rgb), 0.12);
+  border-color: rgba(var(--primary-rgb), 0.15);
+}
+
+.trust-badge-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--primary), #10b981);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.625rem;
+  box-shadow: 0 4px 14px rgba(var(--primary-rgb), 0.2);
+  transition: transform var(--transition-bounce);
+}
+
+.trust-badge-animated:hover .trust-badge-icon {
+  transform: scale(1.12) rotate(-5deg);
+}
+
+.trust-badge-icon .material-symbols-outlined {
+  font-size: 24px;
+  color: var(--white);
+  font-variation-settings: 'FILL' 1;
+}
+
+.trust-badge-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ---------- Newsletter Enhanced ---------- */
+.newsletter-enhanced {
+  position: relative;
+  padding-top: 4rem;
+}
+
+.newsletter-icon-wrap {
+  width: 60px;
+  height: 60px;
+  background: rgba(255,255,255,0.15);
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  animation: iconPulse 3s ease-in-out infinite;
+}
+
+.newsletter-icon-wrap .material-symbols-outlined {
+  font-size: 28px;
+  color: var(--white);
+}
+
+@keyframes iconPulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255,255,255,0.2); }
+  50% { transform: scale(1.06); box-shadow: 0 0 0 12px rgba(255,255,255,0); }
+}
+
+.newsletter-enhanced h2 {
+  font-size: 1.5rem;
+}
+
+.newsletter-privacy {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.45);
+  margin-top: 1rem;
+}
+
+/* ---------- Testimonial Card Quote Overlay ---------- */
+.testimonial-card::before {
+  content: '\201C';
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  font-size: 4rem;
+  font-family: Georgia, serif;
+  color: rgba(var(--primary-rgb), 0.06);
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* ---------- Section Divider Accents ---------- */
+.section-label::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 28px;
+  height: 2.5px;
+  background: linear-gradient(90deg, var(--accent), var(--primary));
+  border-radius: 2px;
+}
+
+.section-label[style*="display:block"]::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ---------- Mobile Polish ---------- */
+@media (max-width: 767px) {
+  .stats-strip-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 0.25rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .stats-strip-item:nth-child(2)::after {
+    display: none;
+  }
+
+  .stats-strip-item:nth-child(1)::after,
+  .stats-strip-item:nth-child(3)::after {
+    height: 80%;
+    top: 10%;
+  }
+
+  .story-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .story-icon .material-symbols-outlined {
+    font-size: 24px;
+  }
+
+  .trust-badge-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .newsletter-enhanced {
+    padding-top: 3rem;
+  }
+
+  .newsletter-icon-wrap {
+    width: 52px;
+    height: 52px;
+  }
+
+  .newsletter-enhanced h2 {
+    font-size: 1.25rem;
   }
 }
