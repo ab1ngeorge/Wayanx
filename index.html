@@ -53,15 +53,18 @@
     <main class="main-content">
 
       <!-- Hero -->
-      <section class="hero"
-        style='background-image: linear-gradient(to top, rgba(6,76,57,0.9) 0%, rgba(6,76,57,0.2) 50%, transparent 100%), url("Asset/product (1).jpeg");'>
+      <section class="hero hero-fullscreen"
+        style='background-image: linear-gradient(to top, rgba(6,76,57,0.95) 0%, rgba(6,76,57,0.5) 40%, rgba(6,76,57,0.15) 70%, transparent 100%), url("Asset/homepage-image.jpeg");'>
         <div class="hero-content">
-          <span class="hero-tag">From the Heart of Western Ghats</span>
+          <span class="hero-tag">🌿 From the Heart of Western Ghats</span>
           <h2 class="gradient-text-hero">Pure Natural Products from Wayanad</h2>
-          <p>Experience the authentic taste of nature, harvested directly from high-altitude farms.</p>
+          <p>Experience the authentic taste of nature, harvested directly from high-altitude farms of Kerala.</p>
           <div class="hero-actions">
-            <a href="shop.html" class="btn btn-accent btn-lg flex-1">Shop Oils</a>
+            <a href="shop.html" class="btn btn-accent btn-lg flex-1 btn-shimmer">Shop Oils</a>
             <a href="shop.html" class="btn btn-outline btn-lg flex-1">Shop Spices</a>
+          </div>
+          <div class="hero-scroll-indicator">
+            <span class="material-symbols-outlined">expand_more</span>
           </div>
         </div>
       </section>
@@ -148,36 +151,49 @@
       </section>
 
       <!-- Promotional Video -->
+<<<<<<< HEAD
       <section class="section reveal">
         <h2 class="text-xl font-extrabold text-center mb-6">Experience WayanX</h2>
         <div style="display: flex; justify-content: center; align-items: center; padding: 0 1rem;">
           <video width="848" height="446" autoplay loop muted playsinline controls style="max-width: 100%; height: auto; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
             <source src="Asset/Video.mp4" type="video/mp4">
+=======
+      <section class="section video-section reveal">
+        <div class="video-section-header">
+          <span class="section-label">Watch</span>
+          <h2 class="text-xl font-extrabold text-center mb-2">Experience WayanX</h2>
+          <p class="text-muted text-center text-sm mb-6">See how we bring nature's best from farm to your table</p>
+        </div>
+        <div class="video-wrapper">
+          <video width="848" height="446" autoplay loop muted playsinline controls>
+            <source src="Asset/video2.mp4" type="video/mp4">
+>>>>>>> 2148ef1 (Initial commit)
             Your browser does not support HTML video.
           </video>
         </div>
       </section>
 
       <!-- Why Choose WayanX -->
-      <section class="section-lg section-bg reveal">
+      <section class="section-lg section-bg usp-section-enhanced reveal">
+        <span class="section-label text-center" style="display:block;">Our Promise</span>
         <h2 class="text-xl font-extrabold text-center mb-8">Why Choose WayanX</h2>
-        <div class="usp-grid">
-          <div class="usp-item">
+        <div class="usp-grid usp-grid-enhanced">
+          <div class="usp-item usp-card-glass reveal delay-1">
             <div class="usp-icon"><span class="material-symbols-outlined">eco</span></div>
             <h4 class="usp-title">100% Natural</h4>
             <p class="usp-desc">No preservatives added</p>
           </div>
-          <div class="usp-item">
+          <div class="usp-item usp-card-glass reveal delay-2">
             <div class="usp-icon"><span class="material-symbols-outlined">handshake</span></div>
             <h4 class="usp-title">Direct From Farm</h4>
             <p class="usp-desc">Supporting local farmers</p>
           </div>
-          <div class="usp-item">
+          <div class="usp-item usp-card-glass reveal delay-3">
             <div class="usp-icon"><span class="material-symbols-outlined">opacity</span></div>
             <h4 class="usp-title">Cold Pressed</h4>
             <p class="usp-desc">Retains all nutrients</p>
           </div>
-          <div class="usp-item">
+          <div class="usp-item usp-card-glass reveal delay-4">
             <div class="usp-icon"><span class="material-symbols-outlined">public</span></div>
             <h4 class="usp-title">World Delivery</h4>
             <p class="usp-desc">Wayanad to the world</p>
@@ -187,24 +203,34 @@
 
       <!-- Explore Categories -->
       <section class="section">
+        <span class="section-label">Browse</span>
         <h2 class="text-xl font-extrabold mb-6">Explore Categories</h2>
-        <div class="space-y-4">
-          <a href="shop.html" class="category-card reveal">
+        <div class="category-list">
+          <a href="shop.html" class="category-card category-card-tall reveal delay-1">
             <img src="Asset/product (3).jpeg" alt="Natural Oils" />
             <div class="category-card-overlay green">
-              <h3>Natural Oils</h3>
+              <div>
+                <h3>Natural Oils</h3>
+                <span class="category-card-cta">Shop Now →</span>
+              </div>
             </div>
           </a>
-          <a href="shop.html" class="category-card reveal">
+          <a href="shop.html" class="category-card category-card-tall reveal delay-2">
             <img src="Asset/product (11).jpeg" alt="Pure Oils" />
             <div class="category-card-overlay amber">
-              <h3>Pure Spices</h3>
+              <div>
+                <h3>Pure Spices</h3>
+                <span class="category-card-cta">Shop Now →</span>
+              </div>
             </div>
           </a>
-          <a href="shop.html" class="category-card reveal">
+          <a href="shop.html" class="category-card category-card-tall reveal delay-3">
             <img src="Asset/product (10).jpeg" alt="Pouch Products" />
             <div class="category-card-overlay brown">
-              <h3>Curry Powders</h3>
+              <div>
+                <h3>Curry Powders</h3>
+                <span class="category-card-cta">Shop Now →</span>
+              </div>
             </div>
           </a>
         </div>
